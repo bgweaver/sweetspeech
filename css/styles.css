@@ -1,5 +1,5 @@
 body {
-  font-family: "Lora", serif; /* Main body text */
+  font-family: "Lora", serif;
   color: #5a5347;
 }
 
@@ -33,19 +33,19 @@ header {
 }
 
 .header-img-wrapper {
-  width: 100%; /* Make it responsive */
-  max-width: 600px; /* Optional: Set a max width */
-  height: 200px; /* Set desired cropped height */
-  overflow: hidden; /* Hide overflow */
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .header-image {
-  width: 100%; /* Maintain width */
-  height: auto; /* Keep aspect ratio */
-  object-fit: cover; /* Ensures cropping */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .btn-primary {
@@ -59,6 +59,6 @@ header {
 
 @media (max-width: 991px) {
   #navbar.navbar-toggler-active {
-    background-color: #F7F2ED; /* Your desired background color */
+    background-color: #F7F2ED;
   }
 }
