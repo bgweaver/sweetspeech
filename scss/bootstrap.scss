@@ -1,4 +1,52 @@
-// Bootstrap Variables
-$primary: #ff0000;
+// Colors
+$primary: #c11b27;  // Deep watercolor red (Primary Accent)
+$secondary: #94b38d; // Muted Mint (Secondary Accent)
+$light: #F7F2ED; // Soft Neutral Beige (Background/Base)
+$dark: #2e2b26; // Warm Charcoal (Dark Text/Headings)
+
+// Additional Custom Colors
+$header-bg: #A2C19F; // Soft Watercolor Green (Header Background)
+$subtext: #5a5347; // Soft brownish-gray (Subtext/Muted Elements)
+$cta: #C55358; // Softer, Earthier Red (Call-to-Action Buttons)
+
+// Spacing
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+  8: $spacer * 12,
+) !default;
+
+$headings-margin-bottom: $spacer * 1;
+$line-height-base: 1.7;
+
+// Navbar
+$navbar-nav-link-padding-x: 0.8rem;
+$navbar-padding-y: 1rem;
+$navbar-dark-color: #fff;
+
+// Buttons
+$button-radius: 50px;
+$button-padding-x: 30px;
+$button-padding-y: 10px;
+
+$btn-border-radius: $button-radius;
+$btn-border-radius-sm: $button-radius;
+$btn-border-radius-lg: $button-radius;
+$btn-padding-y: $button-padding-y;
+$btn-padding-y-lg: $button-padding-y;
+$btn-padding-y-sm: $button-padding-y;
+$btn-padding-x: $button-padding-x;
+$btn-padding-x-lg: $button-padding-x;
+$btn-padding-x-sm: $button-padding-x;
+$navbar-toggler-border-radius: 5px;
+
+$headings-font-weight: bold;
 
 @import '../node_modules/bootstrap/scss/bootstrap';

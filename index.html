@@ -4,37 +4,149 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lora:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Bootstrap 5 Simple Starter</title>
+    <title>Sweet Speech SLP</title>
   </head>
   <body>
-    <div
-      class="container d-flex flex-column align-items-center justify-content-center text-center vh-100 w-50"
-    >
-      <h1 class="text-primary">
-        <i class="fa fa-star"></i> Bootstrap 5 Simple Starter
-      </h1>
-      <p>
-        This is a boilerplate for creating and customizing Bootstrap 5 projects.
-      </p>
-      <p class="bg-light p-2">
-        Look at
-        <strong>"node_modules/bootstrap/dist/scss/_variables.scss"</strong> to
-        see the variables that you can overwrite in your
-        <strong>"scss/bootstrap.scss"</strong> file. For any custom styles, add
-        them to the "scss/styles.scss" file. Do not edit the CSS files directly.
-      </p>
-
-      <p>
-        Build or watch your Sass files with the following commands:
-        <pre>npm run sass:build</pre>
-        <pre>npm run sass:watch</pre>
-      </p>
+    <!-- Navbar -->
+<body id="home">
+  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+      <button
+        class="navbar-toggler ms-auto"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        onclick="toggleNavbar()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#discover">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#summary">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
+    <!--Header-->
+    <header class="header py-4 py-md-6 vh-100">
+      <div class="container">
+        <div class="row mb-5 text-center">
+          <div class="col-12 d-flex justify-content-center align-items-center pb-0 pb-md-5">
+            <div class="header-img-wrapper overflow-hidden">
+              <img class="header-image img-fluid" src="./images/sweetspeechlogonobg.png" alt="Sweet Speech Logo">
+            </div>
+          </div>          
+          <div class="col-md-6 pb-5">
+            <div id="slider" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button
+                  class="active"
+                  type="button"
+                  data-bs-slide-to="0"
+                  data-bs-target="#slider"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-slide-to="1"
+                  data-bs-target="#slider"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-slide-to="2"
+                  data-bs-target="#slider"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-slide-to="3"
+                  data-bs-target="#slider"
+                  aria-label="Slide 4"
+                ></button>
+              </div>
+              <div class="carousel-inner rounded-5">
+                <div class="carousel-item active">
+                  <img
+                    src="images/student1.jpg"
+                    alt=""
+                    class="d-block w-100 rounded-5"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/student4.jpg"
+                    alt=""
+                    class="d-block w-100 rounded-5"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/student2.jpg"
+                    alt=""
+                    class="d-block w-100 rounded-5"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/lined_toys.jpg"
+                    alt=""
+                    class="d-block w-100 rounded-5"
+                  />
+                </div>
+              </div>
+              <!-- Buttons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-slide="prev"
+                data-bs-target="#slider"
+              >
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-slide="next"
+                data-bs-target="#slider"
+              >
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+          </div>
+          <div class="col-md-6 header-text d-flex flex-column align-items-center justify-content-center text-center px-4">
+            <h1 class="display-6 fw-bold">Helping Children Find Their Voice</h1>
+            <p class="fs-5">At Sweet Speech, we provide compassionate and effective speech therapy to help your child communicate with confidence. Let's work together to support their growth and success!</p>
+            <a href="#contact" class="btn btn-primary mt-3">Get Started</a>
+          </div>                   
+        </div>
+      </div>
+  </header>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
   </body>
 </html>

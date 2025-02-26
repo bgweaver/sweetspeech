@@ -1,0 +1,68 @@
+body {
+  font-family: 'Lora', serif; /* Main body text */
+  color: #5a5347;
+}
+
+h1, h2, h3 {
+  font-family: 'Dancing Script', cursive;
+  color: #2e2b26;
+}
+
+button, .btn {
+  background-color: #d04a4f;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+    padding: 1rem 0;
+  }
+  .navbar .nav-link {
+    color: #2e2b26 !important;
+  }
+  .navbar .nav-link:hover {
+    color: #5a5347 !important;
+  }
+  
+header {
+    min-height: 1000px;
+    background: linear-gradient(to bottom right, rgba(247, 242, 237, 0.7), rgba(247, 242, 237, 0.7)), url("../images/green_watercolor_md.jpg") no-repeat center center;
+    background-size: cover;
+    
+}
+
+.header-img-wrapper {
+    width: 100%; /* Make it responsive */
+    max-width: 600px; /* Optional: Set a max width */
+    height: 200px; /* Set desired cropped height */
+    overflow: hidden; /* Hide overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-image {
+    width: 100%; /* Maintain width */
+    height: auto; /* Keep aspect ratio */
+    object-fit: cover; /* Ensures cropping */
+  }
+  
+
+
+
+
+.btn-primary {
+    background-color: #C55358;
+    border-color: #B04044;
+  }
+  
+.btn-primary:hover {
+    background-color: #B04044;
+  }
+  
+
+    @media (max-width: 991px) {
+      #navbar.navbar-toggler-active {
+        background-color: #F7F2ED; /* Your desired background color */
+      }
+    }
