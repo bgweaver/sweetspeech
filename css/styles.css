@@ -1,14 +1,21 @@
+html {
+  scroll-padding-top: 60px; /* Adjust this value depending on the height of your navbar */
+}
+
 body {
   font-family: "Lora", serif;
   color: #5a5347;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Dancing Script", cursive;
   color: #2e2b26;
 }
 
-button, .btn {
+button,
+.btn {
   background-color: #d04a4f;
   color: white;
   font-family: "Raleway", sans-serif;
@@ -16,13 +23,55 @@ button, .btn {
 
 .navbar {
   padding: 1rem 0;
+  transition: background-color 0.3s ease;
 }
 
 .navbar .nav-link {
-  color: #2e2b26 !important;
+  color: #5a5347 !important;
+  font-weight: bold;
 }
 
 .navbar .nav-link:hover {
+  color: #2e2b26 !important;
+  font-weight: bolder;
+}
+
+.navbar-sticky {
+  background-color: rgba(162, 193, 159, 0.95); /* Your existing sticky background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Background color for toggler active state (for mobile menu) */
+.navbar-toggler-active {
+  background-color: rgba(162, 193, 159, 0.95); /* Same as sticky background, or change it if needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Default link colors */
+.navbar .nav-link {
+  color: #5a5347 !important;
+  font-weight: bold;
+}
+
+.navbar .nav-link:hover {
+  color: #2e2b26 !important;
+  font-weight: bolder;
+}
+
+/* Colors when navbar is active (sticky or toggled) */
+.navbar-sticky .nav-link {
+  color: #2e2b26 !important;
+}
+
+.navbar-sticky .nav-link:hover {
+  color: #5a5347 !important;
+}
+
+.navbar-toggler-active .nav-link {
+  color: #2e2b26 !important;
+}
+
+.navbar-toggler-active .nav-link:hover {
   color: #5a5347 !important;
 }
 
@@ -48,6 +97,10 @@ header {
   object-fit: cover;
 }
 
+.services {
+  background-color: #a6c4a2;
+}
+
 .btn-primary {
   background-color: #C55358;
   border-color: #B04044;
@@ -55,10 +108,4 @@ header {
 
 .btn-primary:hover {
   background-color: #B04044;
-}
-
-@media (max-width: 991px) {
-  #navbar.navbar-toggler-active {
-    background-color: #F7F2ED;
-  }
 }
