@@ -202,6 +202,7 @@
 
           <!-- Form -->
           <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+            <input type="hidden" name="form-name" value="contact">
             <div style="display:none;">
               <label for="bot-field">Don't fill this out:</label>
               <input id="bot-field" name="bot-field" type="text" />
@@ -209,22 +210,22 @@
 
             <div class="mb-5">
               <input type="text"
-                class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted"
                 name="name" placeholder="Your Full Name" />
             </div>
             <div class="mb-5">
               <input type="tel"
-                class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted"
                 name="phone" placeholder="Your Phone Number (optional)" />
             </div>
             <div class="mb-5">
               <input type="email"
-                class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted"
                 name="email" placeholder="Your Email Address" />
             </div>
             <div class="mb-5">
               <textarea
-                class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted"
                 name="message" placeholder="How can we help you?"></textarea>
             </div>
             <div data-netlify-recaptcha="true" class="mb-5"></div>
