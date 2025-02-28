@@ -75,8 +75,14 @@ button,
   color: #5a5347 !important;
 }
 
-header {
+.header {
   min-height: 1000px;
+  background: linear-gradient(to bottom right, rgba(247, 242, 237, 0.7), rgba(247, 242, 237, 0.7)), url("../images/green_watercolor_md.avif") no-repeat center center;
+  background-size: cover;
+}
+
+.about {
+  max-height: 500px;
   background: linear-gradient(to bottom right, rgba(247, 242, 237, 0.7), rgba(247, 242, 237, 0.7)), url("../images/green_watercolor_md.avif") no-repeat center center;
   background-size: cover;
 }
@@ -97,6 +103,22 @@ header {
   object-fit: cover;
 }
 
+.about-img-wrapper {
+  width: 100%;
+  max-width: 300px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .services {
   background-color: #a6c4a2;
 }
@@ -108,4 +130,24 @@ header {
 
 .btn-primary:hover {
   background-color: #B04044;
+}
+
+.profile-pic {
+  max-height: 625px;
+}
+
+.responsive-img {
+  content: url("../images/profile_cropped.avif");
+}
+
+.about-cta {
+  background-color: #a6c4a2;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1200px) {
+  .responsive-img {
+    content: url("../images/profile.avif");
+    max-height: 300px;
+  }
 }
