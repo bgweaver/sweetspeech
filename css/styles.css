@@ -1,5 +1,5 @@
 html {
-  scroll-padding-top: 60px; /* Adjust this value depending on the height of your navbar */
+  scroll-padding-top: 60px;
 }
 
 body {
@@ -37,13 +37,12 @@ button,
 }
 
 .navbar-sticky {
-  background-color: rgba(162, 193, 159, 0.95); /* Your existing sticky background */
+  background-color: rgba(162, 193, 159, 0.95);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Background color for toggler active state (for mobile menu) */
 .navbar-toggler-active {
-  background-color: rgba(162, 193, 159, 0.95); /* Same as sticky background, or change it if needed */
+  background-color: rgba(162, 193, 159, 0.95);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -58,7 +57,6 @@ button,
   font-weight: bolder;
 }
 
-/* Colors when navbar is active (sticky or toggled) */
 .navbar-sticky .nav-link {
   color: #2e2b26 !important;
 }
@@ -77,13 +75,13 @@ button,
 
 .header {
   min-height: 1000px;
-  background: linear-gradient(to bottom right, rgba(247, 242, 237, 0.7), rgba(247, 242, 237, 0.7)), url("../images/green_watercolor_md.avif") no-repeat center center;
+  background: linear-gradient(to bottom right, rgba(247, 242, 237, 0.7), rgba(247, 242, 237, 0.7)), url("../images/green_watercolor.avif") no-repeat center center;
   background-size: cover;
 }
 
 .about {
   max-height: 500px;
-  background: linear-gradient(to bottom right, rgba(247, 242, 237, 0.7), rgba(247, 242, 237, 0.7)), url("../images/green_watercolor_md.avif") no-repeat center center;
+  background: linear-gradient(to bottom right, rgba(247, 242, 237, 0.7), rgba(247, 242, 237, 0.7)), url("../images/green_watercolor.avif") no-repeat center center;
   background-size: cover;
 }
 
