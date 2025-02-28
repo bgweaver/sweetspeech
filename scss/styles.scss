@@ -147,10 +147,14 @@ button,
   background-color: #a6c4a2;
 }
 
-/* Media query for smaller screens */
+
 @media (max-width: 1200px) {
   .responsive-img {
     content: url('../images/profile.avif');
     max-height: 300px;
+  }
+
+  .about-pgph {
+    text-align: center;
   }
 }
